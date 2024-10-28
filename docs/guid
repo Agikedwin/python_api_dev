@@ -1,0 +1,5 @@
+pip install fastapi[standard]
+
+pip freeze  #show all the installed packages
+
+fastapi dev main.py

@@ -1,0 +1,7 @@
+Developers can track changes to code rollback code easily with GIT. Why can't we do the same for database models/tables
+
+Database migration migration allow us to incrementally track changes to database scheme and rollback changes to any point in time
+
+We will use a tool called Alembic to make changes to our database
+
+Alembic can also automatically pull database pull database models from Sqlalchemy and generate to proper tables

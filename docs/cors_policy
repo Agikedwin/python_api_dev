@@ -1,0 +1,8 @@
+The Cross Origin Resource Sharing(CORS) allow you to make requests from a web browser on the same domain to a server on different domain
+
+By default web API will allow web browsers running on the same domain as our server to make requests to it
+
+
+
+Others
+Middleware: A function that runs before every request
