@@ -6,3 +6,5 @@ By default web API will allow web browsers running on the same domain as our ser
 
 Others
 Middleware: A function that runs before every request
+
+# make effect to prepare a tuitorial about CORS
