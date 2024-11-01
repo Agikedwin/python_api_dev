@@ -11,6 +11,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+@app.get('/')
+def root_user():
+    return {'message':'This is a default message'}
+
 print(settings)
 
 """

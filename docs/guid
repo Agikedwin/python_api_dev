@@ -2,4 +2,16 @@ pip install fastapi[standard]
 
 pip freeze  #show all the installed packages
 
+RUN : uvicorn app.main:app --reload
+
 fastapi dev main.py
+
+===========TESTS==============
+pytest -v -s tests/test_users.py --disable-warnings -x
+
+-v: Test Status
+-s: print info
+--disable-warnings
+-x: stop when encounters an error
+
+

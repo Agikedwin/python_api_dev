@@ -1,0 +1,10 @@
+git init
+git add --all
+git commit -m"initial commit"
+git config --global user.email agikedwin@gmail.com
+git config --global user.name Agikedwin
+
+git branch -M main
+git remote add origin https://github.com/Agikedwin/python_api_dev.git
+
+

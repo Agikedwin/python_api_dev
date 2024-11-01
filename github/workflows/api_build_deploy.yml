@@ -1,0 +1,14 @@
+name: Build and Deploy API code
+
+on: [push, pull_request]
+
+jobs:
+  job_api_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
+      - name: starting agik works
+        run: echo "Started running agik API code"
+
+
