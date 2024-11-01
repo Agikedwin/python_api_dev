@@ -1,76 +1,243 @@
-
-Usage:   
-  pip <command> [options]
-
-Commands:
-  install                     Install packages.
-  download                    Download packages.
-  uninstall                   Uninstall packages.
-  freeze                      Output installed packages in requirements format.
-  inspect                     Inspect the python environment.
-  list                        List installed packages.
-  show                        Show information about installed packages.
-  check                       Verify installed packages have compatible dependencies.
-  config                      Manage local and global configuration.
-  search                      Search PyPI for packages.
-  cache                       Inspect and manage pip's wheel cache.
-  index                       Inspect information available from package indexes.
-  wheel                       Build wheels from your requirements.
-  hash                        Compute hashes of package archives.
-  completion                  A helper command used for command completion.
-  debug                       Show information useful for debugging.
-  help                        Show help for commands.
-
-General Options:
-  -h, --help                  Show help.
-  --debug                     Let unhandled exceptions propagate outside the
-                              main subroutine, instead of logging them to
-                              stderr.
-  --isolated                  Run pip in an isolated mode, ignoring
-                              environment variables and user configuration.
-  --require-virtualenv        Allow pip to only run in a virtual environment;
-                              exit with an error otherwise.
-  --python <python>           Run pip with the specified Python interpreter.
-  -v, --verbose               Give more output. Option is additive, and can be
-                              used up to 3 times.
-  -V, --version               Show version and exit.
-  -q, --quiet                 Give less output. Option is additive, and can be
-                              used up to 3 times (corresponding to WARNING,
-                              ERROR, and CRITICAL logging levels).
-  --log <path>                Path to a verbose appending log.
-  --no-input                  Disable prompting for input.
-  --keyring-provider <keyring_provider>
-                              Enable the credential lookup via the keyring
-                              library if user input is allowed. Specify which
-                              mechanism to use [disabled, import, subprocess].
-                              (default: disabled)
-  --proxy <proxy>             Specify a proxy in the form
-                              scheme://[user:passwd@]proxy.server:port.
-  --retries <retries>         Maximum number of retries each connection should
-                              attempt (default 5 times).
-  --timeout <sec>             Set the socket timeout (default 15 seconds).
-  --exists-action <action>    Default action when a path already exists:
-                              (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.
-  --trusted-host <hostname>   Mark this host or host:port pair as trusted,
-                              even though it does not have valid or any HTTPS.
-  --cert <path>               Path to PEM-encoded CA certificate bundle. If
-                              provided, overrides the default. See 'SSL
-                              Certificate Verification' in pip documentation
-                              for more information.
-  --client-cert <path>        Path to SSL client certificate, a single file
-                              containing the private key and the certificate
-                              in PEM format.
-  --cache-dir <dir>           Store the cache data in <dir>.
-  --no-cache-dir              Disable the cache.
-  --disable-pip-version-check
-                              Don't periodically check PyPI to determine
-                              whether a new version of pip is available for
-                              download. Implied with --no-index.
-  --no-color                  Suppress colored output.
-  --no-python-version-warning
-                              Silence deprecation warnings for upcoming
-                              unsupported Pythons.
-  --use-feature <feature>     Enable new functionality, that may be backward
-                              incompatible.
-  --use-deprecated <feature>  Enable deprecated functionality, that will be
-                              removed in the future.
+absl-py==2.1.0
+alembic==1.13.1
+altair==5.3.0
+annotated-types==0.6.0
+anyio==4.1.0
+argon2-cffi==23.1.0
+argon2-cffi-bindings==21.2.0
+arrow==1.3.0
+asttokens==2.4.1
+astunparse==1.6.3
+async-lru==2.0.4
+attrs==23.1.0
+Babel==2.13.1
+bcrypt==3.2.0
+beautifulsoup4==4.12.2
+bleach==6.1.0
+blinker==1.7.0
+cachetools==5.3.3
+certifi==2020.6.20
+cffi==1.16.0
+chardet==4.0.0
+charset-normalizer==3.3.2
+click==8.1.7
+colorama==0.4.4
+comm==0.2.0
+contourpy==1.2.0
+cryptography==3.4.8
+cycler==0.12.1
+databases==0.9.0
+deap==1.4.1
+debugpy==1.8.0
+decorator==5.1.1
+defusedxml==0.7.1
+distro==1.7.0
+dnspython==2.5.0
+docker==5.0.3
+dockerpty==0.4.1
+docopt==0.6.2
+ecdsa==0.19.0
+email_validator==2.2.0
+exceptiongroup==1.2.0
+executing==2.0.1
+fastapi==0.109.0
+fasteners==0.14.1
+fastjsonschema==2.19.0
+findspark==2.0.1
+Flask==3.0.2
+Flask-Bcrypt==1.0.1
+Flask-Cors==4.0.0
+Flask-Login==0.6.3
+Flask-Migrate==4.0.7
+Flask-SQLAlchemy==3.1.1
+flask-swagger-ui==4.11.1
+flatbuffers==24.3.25
+fonttools==4.47.0
+fqdn==1.5.1
+future==0.18.2
+gast==0.5.4
+gitdb==4.0.11
+GitPython==3.1.43
+google-pasta==0.2.0
+greenlet==3.0.3
+grpcio==1.64.0
+h11==0.14.0
+h5py==3.11.0
+httpcore==1.0.6
+httplib2==0.20.2
+httptools==0.6.1
+httpx==0.27.2
+idna==3.3
+imageio==2.34.0
+importlib-metadata==4.6.4
+iniconfig==2.0.0
+ipykernel==6.27.1
+ipython==8.18.1
+ipywidgets==8.1.1
+isoduration==20.11.0
+itsdangerous==2.1.2
+jedi==0.19.1
+jeepney==0.7.1
+Jinja2==3.1.2
+joblib==1.3.2
+json5==0.9.14
+jsonpointer==2.4
+jsonschema==4.20.0
+jsonschema-specifications==2023.11.1
+jupyter==1.0.0
+jupyter-console==6.6.3
+jupyter-events==0.9.0
+jupyter-lsp==2.2.1
+jupyter_client==8.6.0
+jupyter_core==5.5.0
+jupyter_server==2.11.1
+jupyter_server_terminals==0.4.4
+jupyterlab==4.0.9
+jupyterlab-widgets==3.0.9
+jupyterlab_pygments==0.3.0
+jupyterlab_server==2.25.2
+keras==3.3.3
+keyring==23.5.0
+kiwisolver==1.4.5
+launchpadlib==1.10.16
+lazr.restfulclient==0.14.4
+lazr.uri==1.0.6
+libclang==18.1.1
+lockfile==0.12.2
+macaroonbakery==1.3.1
+Mako==1.1.3
+Markdown==3.6
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+matplotlib==3.8.2
+matplotlib-inline==0.1.6
+mdurl==0.1.2
+mglearn==0.2.0
+mistune==3.0.2
+ml-dtypes==0.3.2
+monotonic==1.6
+more-itertools==8.10.0
+mysql-connector-python==8.4.0
+namex==0.0.8
+nbclient==0.9.0
+nbconvert==7.11.0
+nbformat==5.9.2
+nest-asyncio==1.5.8
+notebook==7.0.6
+notebook_shim==0.2.3
+numpy==1.26.2
+nvidia-nccl-cu12==2.23.4
+oauthlib==3.2.0
+olefile==0.46
+opencv-python==4.9.0.80
+opt-einsum==3.3.0
+optree==0.11.0
+overrides==7.4.0
+packaging==23.2
+pandas==2.1.4
+pandocfilters==1.5.0
+paramiko==2.9.3
+parso==0.8.3
+passlib==1.7.4
+pexpect==4.8.0
+pillow==10.4.0
+platformdirs==4.0.0
+pluggy==1.5.0
+prometheus-client==0.19.0
+prompt-toolkit==3.0.41
+protobuf==4.25.3
+psutil==5.9.6
+ptyprocess==0.7.0
+pure-eval==0.2.2
+py4j==0.10.9.7
+pyarrow==16.1.0
+pyasn1==0.6.1
+pycparser==2.21
+pydantic==2.9.2
+pydantic-settings==2.6.0
+pydantic_core==2.23.4
+pydeck==0.9.1
+pydotplus==2.0.2
+Pygments==2.17.2
+PyJWT==2.3.0
+pymacaroons==0.13.0
+pymongo==4.6.1
+PyMySQL==1.1.0
+PyNaCl==1.5.0
+pyparsing==2.4.7
+pyRFC3339==1.1
+pyrsistent==0.18.1
+pyspark==3.5.0
+pytest==8.3.3
+python-dateutil==2.8.2
+python-dotenv==1.0.1
+python-jose==3.3.0
+python-json-logger==2.0.7
+python-multipart==0.0.6
+pytz==2022.1
+pyxdg==0.27
+PyYAML==6.0.2
+pyzmq==25.1.1
+qtconsole==5.5.1
+QtPy==2.4.1
+referencing==0.31.0
+requests==2.31.0
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rich==13.7.1
+rpds-py==0.13.1
+rsa==4.9
+scikit-learn==1.5.0
+scipy==1.11.4
+seaborn==0.13.1
+SecretStorage==3.3.1
+Send2Trash==1.8.2
+six==1.16.0
+smmap==5.0.1
+sniffio==1.3.0
+soupsieve==2.5
+SQLAlchemy==2.0.28
+ssh-import-id==5.11
+stack-data==0.6.3
+starlette==0.35.1
+stopit==1.1.2
+streamlit==1.34.0
+tenacity==8.3.0
+tensorboard==2.16.2
+tensorboard-data-server==0.7.2
+tensorflow==2.16.1
+tensorflow-io-gcs-filesystem==0.37.0
+termcolor==2.4.0
+terminado==0.18.0
+texttable==1.6.4
+threadpoolctl==3.2.0
+tinycss2==1.2.1
+toml==0.10.2
+tomli==2.0.1
+toolz==0.12.1
+tornado==6.4
+TPOT==0.12.2
+tqdm==4.66.4
+traitlets==5.14.0
+types-python-dateutil==2.8.19.14
+typing_extensions==4.8.0
+tzdata==2023.4
+update-checker==0.18.0
+uri-template==1.3.0
+urllib3==1.26.5
+uvicorn==0.27.0
+uvloop==0.20.0
+wadllib==1.3.6
+watchdog==4.0.0
+watchfiles==0.24.0
+wcwidth==0.2.12
+webcolors==1.13
+webencodings==0.5.1
+websocket-client==1.6.4
+websockets==13.1
+Werkzeug==3.0.1
+widgetsnbextension==4.0.9
+wrapt==1.16.0
+xdg==5.0.0
+xgboost==2.0.3
+zipp==1.0.0
