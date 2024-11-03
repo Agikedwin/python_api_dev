@@ -69,7 +69,6 @@ httptools==0.6.1
 httpx==0.27.2
 idna==3.3
 imageio==2.34.0
-importlib-metadata==4.6.4
 iniconfig==2.0.0
 ipykernel==6.27.1
 ipython==8.18.1
