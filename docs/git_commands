@@ -8,3 +8,6 @@ git branch -M main
 git remote add origin https://github.com/Agikedwin/python_api_dev.git
 
 
+https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
+
+

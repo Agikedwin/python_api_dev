@@ -4,6 +4,15 @@ on: [push, pull_request]
 
 jobs:
   job_api_1:
+    env:
+      DATABASE_HOSTNAME: localhost
+      DATABASE_PORT: 3306
+      DATABASE_PASSWORD: root
+      DATABASE_NAME: api_dev
+      DATABASE_USERNAME: root
+      SECRET_KEY: nN3ruYLMhmoph83XPTCvVBBQBHmgp07I
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 60
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
