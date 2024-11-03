@@ -1,9 +1,10 @@
-
-__pycache__
+app/__pycache__/
+__pycache__/
 venv/
 .env/
 .venv/
 alembic/
 docs/
 alembic.ini
+apivenv/
 

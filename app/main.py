@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from app.database import engine
 from app import  models
 from  app.routers import  post, user, auth, vote
-from  .config import settings
+from  app.config import settings
 
 models.Base.metadata.create_all(engine)
 from fastapi.middleware.cors import CORSMiddleware
@@ -15,7 +15,7 @@ app = FastAPI()
 def root_user():
     return {'message':'This is a default message'}
 
-print(settings)
+
 
 """
 

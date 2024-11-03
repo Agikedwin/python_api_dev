@@ -1,9 +1,5 @@
-#from pydantic_settings import BaseSettings
-from datetime import datetime
-
+from dns.dnssecalgs import algorithms
 from pydantic.v1 import BaseSettings
-
-
 
 class Settings(BaseSettings):
     database_hostname: str
@@ -14,8 +10,9 @@ class Settings(BaseSettings):
     secret_key: str
     algorithm: str
     access_token_expire_minutes: int
-
     class Config:
         env_file = ".env"
 
 settings = Settings()
+print("*********************************8888888", settings.database_hostname)
+
